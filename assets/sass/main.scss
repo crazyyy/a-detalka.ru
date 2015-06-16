@@ -1,4 +1,3 @@
-
 .clearfix {
   *zoom: 1;
   &:before {
@@ -16,83 +15,144 @@
 .clear {
   clear: both;
 }
-.rebuild-content {
-  h2 {
-    font-size: 200%;
-
-    margin: 0 0 20px;
+#wrap-lamps {
+  .main-img img {
+    max-width: 100%;
   }
-  ul {
+  position: relative;
+  .groups {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.group-lamp {
+  position: absolute;
+  a {
     display: block;
-
-    margin: 0 0 20px;
-    padding: 0;
-
-    list-style: none;
-
-    @extend .clearfix;
-    li {
-      display: inline-block;
-      float: left;
-
-      width: 20%;
-      padding: 5px;
-
-      text-align: center;
-      a {
-        color: #36f;
-      }
+    float: left;
+    height: 70px;
+    color: #333;
+    text-decoration: none;
+    margin: 0 7px;
+    text-decoration: underline;
+    &:hover {
+      color: red;
     }
   }
-  table {
-    width: 100%;
-    td,
-    th {
-      padding: 6px;
+}
 
-      text-align: center;
-      vertical-align: middle;
-    }
-    th {
-      background-color: #c1c1c1;
-    }
-    td {
-      width: 30%;
-      border-bottom: 1px solid #c1c1c1;
-      border-right: 0;
-      border-left: 0;
-      &:first-child {
-        width: 70%;
+.group-brake-lights {
+  width: 382px;
+  top: 1206px;
+  left: 11px;
+}
 
-        text-align: left;
-      }
-      a{
-        color: red;
-        text-decoration: none;
-        border-bottom: 1px dotted red;
-        &:hover {
-          border-bottom: 1px solid red;
-        }
-      }
-    }
-    tr {
-      &:nth-child(2) {
-        td {
-          text-align: center;
-          font-weight: bold;
-          background-color: #D7CACA;
-        }
-      }
-      &:last-child {
-        td {
-          border-bottom: 0;
-        }
-      }
-      &:hover {
-        td {
-          background-color: #D7CACA;
-        }
-      }
-    }
+.group-brake-lights-center {
+  width: 382px;
+  left: 11px;
+  top: 718px;
+}
+
+.group-interiror-lights {
+  width: 382px;
+  left: 464px;
+  top: 718px;
+}
+
+.group-back-number {
+  width: 382px;
+  left: 11px;
+  top: 1077px;
+}
+
+.group-trunk-lights {
+  width: 382px;
+  left: 11px;
+  top: 957px;
+}
+
+.group-glovebox-lights {
+  top: 17px;
+  width: 382px;
+  left: 11px;
+}
+
+.group-dashboard-lights {
+  top: 17px;
+  width: 382px;
+  left: 470px;
+}
+
+.group-fog-lights {
+  top: 605px;
+  width: 480px;
+  left: 465px;
+}
+
+.group-side-blinkers {
+  left: 620px;
+  top: 121px;
+  width: 382px;
+}
+
+.group-blinkers {
+  left: 11px;
+  top: 605px;
+  width: 382px;
+}
+
+.group-front-parking-lights {
+  left: 11px;
+  top: 474px;
+  width: 382px;
+}
+
+.group-reversing-lamp {
+  left: 11px;
+  top: 831px;
+  width: 382px;
+}
+
+.group-high-beam {
+  left: 11px;
+  top: 170px;
+  width: 382px;
+}
+
+.group-rear-fog-lights {
+  width: 382px;
+  left: 501px;
+  top: 1252px;
+}
+
+.group-back-parking-lights {
+  width: 382px;
+  left: 595px;
+  top: 1149px;
+}
+
+.group-lamp {
+  .fig {
+    width: 36px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .txt {
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin-top: 1px;
+  }
+  .name-group {
+    background-color: #900;
+    display: inline-block;
+    color: #fff;
+    border-bottom-left-radius: 37px;
+    font-size: 15px;
+    padding: 1px 19px;
   }
 }
