@@ -1,0 +1,861 @@
+/* вместо тега <b> */
+.font_bold{
+	font-weight: bold;
+}
+/* Личный кабинет "Заказы" таблица */
+.orders_list tr.ordersListTr2Merged td {
+	border-top: 1px solid #e8e8e8;
+	border-left: 1px solid #e8e8e8 !important;
+	vertical-align: middle;
+	padding: 2px 4px;
+	color: #454545;
+	font-size: 11px;
+}
+
+.orders_list tr.orders_list_tr2 td:last-child {
+	padding: 5px;
+}
+
+/* Личный кабинет "Заказы" все заказы */
+.all_orders {
+	background-color: #eaeaea;
+}
+
+/* старый Carbase и фиолетовые таблицы (забыли пароль, шины и диски)*/
+/* -------------------------------------------------------------------------- */
+
+table.classicTable {
+	padding: 0;
+	margin: 0 0 10px 0;
+	border-collapse: separate;
+	border-spacing: 0;
+	color:#454545;
+	background: #fff;
+	font-size:11px;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+table.classicTable tr{
+	height: 30px;
+}
+
+table.classicTable th {
+	background: #f1f1f1 url(//astatic.abcp.ru/common.images/global_tables/table_head_bg.png) repeat-x;
+	position: relative;
+	height: 32px;
+	padding: 2px 4px;
+	font:bold 11px Arial;
+	vertical-align: middle;
+	color:#454545;
+	border-width:0 0 0 1px;
+	border-style: solid;
+	border-color:#e8e8e8;
+}
+
+table.classicTable th:first-child{
+	border-left: 0;
+}
+
+table.classicTable tr{
+	background: #fff;
+}
+
+table.classicTable tr:HOVER {
+	background: #F0F0F0;
+}
+
+
+table.classicTable td {
+	vertical-align: middle;
+	text-align: left;
+	padding: 2px 4px;
+	color:#454545;
+	font-size:11px;
+	border-width:1px 0 0 1px;
+	border-style: solid;
+	border-color:#e8e8e8;
+}
+
+table.classicTable td:first-child{
+	border-left: 0;
+}
+
+table.classicEditTable {
+	padding: 0;
+	margin: 0 0 10px 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color:#454545;
+	background: transparent;
+	font-size:11px;
+	border:1px solid #e8e8e8;
+}
+table.classicEditTable th {
+	background: #f1f1f1 url(//astatic.abcp.ru/common.images/global_tables/table_head_bg.png) repeat-x;
+	position: relative;
+	height: 32px;
+	padding: 2px 4px;
+	font:bold 11px Arial;
+	text-align: left;
+	vertical-align: middle;
+	color:#454545;
+	border:1px solid #e8e8e8;
+}
+
+table.classicEditTable tr {
+	background: #fff;
+}
+
+table.classicEditTable tr:HOVER {
+	background: #F0F0F0;
+}
+table.classicEditTable td {
+	vertical-align: middle;
+	text-align: left;
+	padding: 2px 4px;
+	color:#454545;
+	font-size:11px;
+	border:1px solid #e8e8e8;
+}
+
+table.classicEditTable tr:hover th{
+	background: transparent;
+}
+
+table.classicEditTable td.buttonsRow{
+	border: 1px solid #e8e8e8;
+}
+
+table.classicEditTable tr.buttonsRow td{
+	padding: 4px;
+	text-align: right !important;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color:#e8e8e8;
+}
+
+table.classicEditTable tr.buttonsRow:hover{
+	background: transparent;
+}
+
+table.classicEditTable span.warningSpan {
+	color:red;
+}
+table.classicEditTable td.warning {
+	background-color: #ffffff !important;
+	color: red !important;
+	font-weight: normal;
+	border: none !important;
+}
+/* Конец старого Carbase */
+
+.ui-autocomplete-loading {
+	background: white url('/common.images/ajaxloader_smll.gif') right center no-repeat;
+}
+.ui-corner-all, .ui-active-menuitem {
+	font-family: 'Arial', sans-serif; font-size: 1em;
+}
+
+/* Стандартный каталог масел */
+.oils-tbl tr,
+.oils-tbl td,
+.oils-tbl th {
+	color: #000;
+}
+.oils-tbl td{
+	padding-right: 10px;
+}
+.oils-tbl-title{
+	color: #000;
+	font:bold 10pt/14px 'Arial';
+}
+.oils-tbl a,
+.oils-tbl a:visited,
+.oils-tbl span{
+	font:normal normal 9.5pt/16px 'arial' !important;
+}
+.oils-tbl-separator{
+	width: 25px;
+}
+
+/*Оформление заказа (trash.order.tpl).*/
+#anonymOrderChoice{
+	height: auto !important;
+}
+
+/*всплывающее окно описания бренда - /admin/common.code/global.pages/ru_center_ajax_get_brand_info.php */
+.brandImage{
+	float: left;
+	width:120px;
+}
+.brandImage img{
+	padding: 20px 0 0 0;
+	max-width:120px;
+}
+.brandDescription{
+	float: left;
+	white-space: normal;
+	width: 360px;
+}
+.brandClientComment{
+	border-width: 1px;
+	border-style: dotted;
+	border-color: red;
+}
+.brandAnnotation{
+	white-space: normal;
+}
+
+/*Вынесено из скрипта jquery.placeholder.min.js */
+.jqueryPlaceholder{
+	color: #a9a9a9;
+}
+
+/* 0026148: Оповещение клиентов о необходимости отправить к нам подписанные документы и мотивирующие ограничения */
+.documentsAlarm {
+	font: 16px Tahoma, Geneva CY, Sans-serif;
+	border-top: 5px solid #FF8800;
+	width:100%;
+	background: rgb(255, 168, 30);
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color:#2D2D2D;
+	z-index: 1000001;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.documentsAlarm .cell{
+	padding: 20px 0 20px 20px;
+}
+
+.documentsAlarm h1{
+	color:#2D2D2D;
+	font-size: 22px;
+	font-family: Trebuchet MS, Helvetica CY, Sans-serif;
+}
+
+.documentsAlarm ul{
+	padding:0;
+	margin:0 0 10px;
+}
+
+.documentsAlarm ul li{
+	padding:0 30px 8px;
+	list-style: none;
+	background: url(//astatic.abcp.ru/common.images/docs_needed2.png) no-repeat 0 0;
+}
+
+.documentsAlarm ul li img{
+	vertical-align: top;
+}
+
+.documentsAlarm .closeAlarm{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	height: 15px;
+	width: 14px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 5px;
+	color: #f9f9f9;
+	background: #2D2D2D;
+	cursor: pointer;
+}
+
+.documentsAlarm .closeAlarm:hover{
+	background: #111;
+	color: #fff;
+	opacity: 1;
+}
+
+/*Корзина. Класс для таблицы*/
+
+table.cartTable{
+	border:0;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+
+/*Корзина. Класс для строки красного цвета*/
+table.cartTable .redTr {
+	background: #FF8383;
+}
+
+/*Класс для таблицы со скидками */
+.cartTableDiscount {
+	display: inline-block;
+}
+
+.cartTableDiscount table {
+	margin-bottom: 0 !important;
+}
+
+/* Убрали подсветку в input'ах */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea{
+	outline: none;
+}
+
+/* стили для search.ajax.tips.js */
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-size: inherit;
+}
+
+/* Fix выпадающего списка */
+.ui-menu .ui-menu-item a.ui-state-hover{
+	margin: 0;
+	border: 1px solid #999999;
+}
+
+.ui-menu .ui-menu-item a{
+	border: 1px solid transparent;
+}
+
+/*ab.visual.form.search.php - заменен тег и добавлен класс*/
+.limitExceededRequestsMessage{
+	color: red;
+	font-weight: bold;
+}
+
+/*классы для всех сайтов*/
+.hidden {
+	display: none;
+}
+
+/* увеличен z-index для fancybox чтобы он перекрывал всплывающие на сайте подсказки qtip */
+.fancybox-overlay {
+	z-index: 16010;
+}
+
+.fancybox-wrap {
+	z-index: 16020;
+}
+
+.fancybox-opened {
+	z-index: 16030;
+}
+
+#fancybox-loading {
+	z-index: 16060;
+}
+
+.fancybox-close,
+.fancybox-nav,
+.fancybox-nav span {
+	z-index: 16040;
+}
+
+.fancybox-title,
+.fancybox-title-float-wrap {
+	z-index: 16050;
+}
+/* END увеличен z-index для fancybox чтобы он перекрывал всплывающие на сайте подсказки qtip */
+
+/* уменьшила ширину select в корзине, чтобы не распирало*/
+.profileSelect {
+	max-width: 90px;
+}
+
+/* перенос бесконечного слова в поле Ваш комментарий в оформлении заказа */
+.clientCommentCell,
+.allOrdersComment {
+	word-break: break-all;
+}
+
+#newCustomerDiv .ui-multiselect-menu label {
+	display: block;
+	text-align: left;
+}
+.acceptOrderCustomerSelectTable {
+	/*ширина таблицы скачет из-за плагина multiselect*/
+	width: 640px;
+}
+
+.uploadFileBlock{
+	width: 620px;
+	margin: 10px 0 20px;
+	color: #4c4c4c;
+}
+
+.uploadFileBlock .loadCartFilterRadios{
+	margin: 0 10px 0 0;
+	font-weight: bold;
+}
+
+.uploadFileBlock .cartFileDownload{
+	margin-top: 20px;
+}
+
+.cartLoadIconDown{
+	font-size: 15px;
+	vertical-align: middle;
+	margin-right: 2px;
+	color: #444;
+}
+
+.uploadFileBlock .loadCartSelect,
+.loadCartInputFile{
+	width: 255px;
+}
+
+.uploadFileBlock .loadCartInputFile{
+	color: #4c4c4c;
+}
+
+.uploadFileBlock .loadCartSelect .fr-form-label{
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+/* order.rows.tpl */
+.posHistoryInfo{
+	text-decoration: none;
+	font-size: 16px;
+	vertical-align: middle !important;
+	margin-left: 3px;
+	color: #555;
+}
+
+/* новый стиль для старых таблиц */
+.cart_table,
+.orders_list,
+.all_orders,
+.full_order {
+	position: relative;
+	padding: 0;
+	margin: 0 0 10px 0;
+	border-collapse: separate;
+	border-spacing: 0;
+	color: #454545;
+	font-size: 11px;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	zoom: 1;
+}
+
+.cart_table tr,
+.cart_table tr,
+.extraTableStyle tr,
+.orders_list tr,
+.all_orders tr,
+.full_order tr {
+	height: 30px;
+	background: #fff;
+}
+
+.cart_table tr.cart_tr td,
+.cart_table tr.cart_tr2 td,
+.cart_table tr.cart_tr2_trash td,
+.cart_table tr.cart_tr3 td,
+.cart_table tr.trashOrderPositionsHead td,
+.cart_table tr.trashOrderPositionsTr2 td,
+.cart_table tr.trashOrderPositionsTr3 td,
+.orders_list tr.orders_list_tr1 td,
+.orders_list tr.orders_list_tr2 td,
+.orders_list tr.orders_list_tr3 td,
+.all_orders tr.orders_list_tr1 td,
+.all_orders tr.all_orders_tr1 td,
+.all_orders tr.all_orders_tr2 td,
+.all_orders tr.all_orders_tr3 td,
+.full_order .full_order_tr1 td,
+.full_order .full_order_tr2 td {
+	padding: 2px 4px;
+	border-left: 1px solid #e8e8e8;
+	vertical-align: middle;
+	color: #454545;
+}
+
+.cart_table tr.cart_tr td,
+.cart_table tr.trashOrderPositionsHead td,
+.orders_list tr.orders_list_tr1 td,
+.all_orders tr.orders_list_tr1 td,
+.all_orders tr.all_orders_tr1 td,
+.full_order .full_order_tr1 td {
+	position: relative;
+	height: 32px;
+	font: bold 11px Arial;
+	text-align: left;
+	background: #f0f0f0 url(//astatic.abcp.ru/common.images/global_tables/table_head_bg.png) repeat-x;
+}
+
+.cart_table tr.cart_tr2_trash td,
+.cart_table tr.cart_tr2 td,
+.cart_table tr.cart_tr3 td,
+.cart_table tr.trashOrderPositionsTr2 td,
+.cart_table tr.trashOrderPositionsTr3 td,
+.orders_list tr.orders_list_tr2 td,
+.orders_list tr.orders_list_tr3 td,
+.all_orders tr.all_orders_tr2 td,
+.all_orders tr.all_orders_tr3 td,
+.full_order .full_order_tr2 td {
+	border-top: 1px solid #e8e8e8;
+	font-size: 11px;
+}
+
+.cart_table tr.cart_tr3 td,
+.cart_table tr.trashOrderPositionsTr3 td,
+.orders_list tr.orders_list_tr3 td {
+	text-align: right;
+}
+
+.cart_table tr.cart_tr3 td.cartPrice,
+.cart_table tr.trashOrderPositionsTr3 td.cartPrice {
+	text-align: right;
+}
+
+.cart_table tr.cart_tr td:first-child,
+.cart_table tr.cart_tr2 td:first-child,
+.cart_table tr.cart_tr2_trash td:first-child,
+.cart_table tr.cart_tr3 td,
+.cart_table tr.trashOrderPositionsHead td:first-child,
+.cart_table tr.trashOrderPositionsTr2 td:first-child,
+.cart_table tr.trashOrderPositionsTr3 td,
+.cart_table tr.trashOrderPositionsTr3 td:first-child,
+.orders_list tr td:first-child,
+.orders_list tr.orders_list_tr1 td:first-child,
+.orders_list tr.orders_list_tr2 td:first-child,
+.orders_list tr.orders_list_tr3 td,
+.orders_list tr.orders_list_tr3 td:first-child,
+.all_orders tr.all_orders_tr2 td:first-child,
+.all_orders tr.all_orders_tr3 td:first-child,
+.full_order tr td:first-child,
+.full_order .orders_list_tr2 td:first-child,
+.full_order .orders_list_tr3 td:first-child {
+	border-left: 0;
+}
+
+.cart_table tr.cart_tr td a {
+	font: 11px Arial;
+}
+
+#formTrash tr.cartSum td.cartPrice,
+#trashAcceptorderForm tr.cartSum td.cartPrice,
+.full_order .full_order_tr2 td.orderRowsFinalSum,
+.orders_list tr.orders_list_tr3 td.orderRowsFinalSum,
+.paymentOrderStart tr td.orderRowsFinalSum,
+.all_orders tr.all_orders_tr3 td.orderRowsFinalSum {
+	font-size: 16px !important;
+}
+
+.cancelPositionIco{
+	text-decoration: none;
+}
+
+.cancelPositionIco span{
+	font-size: 16px;
+}
+
+/*перенесено*/
+tr.marked,
+tr.marked td {
+	font-weight: bold;
+}
+
+/*trash.order.positions.tpl*/
+table.cartSendOrder td.orderSum{
+	font-size: 16px;
+}
+
+/*payment.order.start.tpl*/
+table.classicTable.paymentOrderStart{
+	margin-bottom: 20px;
+}
+
+/* Стили с визуального редактора */
+
+span.grey-word {
+	color: #888;
+}
+
+span.red-word {
+	color: #E30613;
+}
+
+span.green-word {
+	color: #00E000;
+}
+
+span.darkGrey {
+	color: #333;
+	text-decoration: underline;
+	font: normal normal 9.2pt/14px Arial;
+	outline: none;
+}
+
+a.httpLink,
+a.httpLink:visited,
+a.exeLink,
+a.exeLink:visited,
+a.pdfLink,
+a.pdfLink:visited,
+a.rarLink,
+a.rarLink:visited,
+a.xlsLink,
+a.xlsLink:visited,
+a.docLink,
+a.docLink:visited,
+a.pptLink,
+a.pptLink:visited,
+a.txtLink,
+a.txtLink:visited,
+a.fileLink,
+a.fileLink:visited {
+	vertical-align: text-bottom;
+	padding: 5px 0 5px 22px;
+}
+
+a.httpLink,
+a.httpLink:visited {
+	background: url('/common.images/html.gif') no-repeat left center;
+}
+
+a.exeLink,
+a.exeLink:visited {
+	background: url('/common.images/exe.gif') no-repeat left center;
+}
+
+a.pdfLink,
+a.pdfLink:visited {
+	background: url('/common.images/pdf2.gif') no-repeat left center;
+}
+
+a.rarLink,
+a.rarLink:visited {
+	background: url('/common.images/rar2.gif') no-repeat left center;
+}
+
+a.xlsLink,
+a.xlsLink:visited {
+	background: url('/common.images/excel.gif') no-repeat left center;
+}
+
+a.docLink,
+a.docLink:visited {
+	background: url('/common.images/doc.gif') no-repeat left center;
+}
+
+a.pptLink,
+a.pptLink:visited {
+	background: url('/common.images/ppt.gif') no-repeat left center;
+}
+
+a.txtLink,
+a.txtLink:visited {
+	background: url('/common.images/txt.gif') no-repeat left center;
+}
+
+a.fileLink,
+a.fileLink:visited {
+	background: url('/common.images/file.png') no-repeat left center;
+}
+
+table.contentClassic {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+table.contentClassic tr th,
+table.contentClassic tr td {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+img.imageLeft {
+	float: left;
+	margin: 0 10px;
+}
+
+img.imageRight {
+	float: right;
+	margin: 0 10px;
+}
+/* END: Стили с визуального редактора */
+
+/* Начало: Selects Шинный калькулятор и Carbase*/
+select.CASelects,
+select.CASelects[disabled="disabled"],
+select.carbaseApplicabilitySelect,
+select.carbaseApplicabilitySelect[disabled="disabled"] {
+	border-radius: 0 !important;
+}
+select.CASelects {
+	background: #DFDFDF;
+	background: -webkit-gradient(linear,0 0,0 bottom,from(#F5F5F5),to(#DFDFDF));
+	background: -webkit-linear-gradient(#F5F5F5,#DFDFDF);
+	background: -moz-linear-gradient(#F5F5F5,#DFDFDF);
+	background: -ms-linear-gradient(#F5F5F5,#DFDFDF);
+	background: -o-linear-gradient(#F5F5F5,#DFDFDF);
+	background: linear-gradient(#F5F5F5,#DFDFDF);
+}
+
+select.CASelects[disabled="disabled"] {
+	background: #9ea2a3;
+	background: -webkit-gradient(linear,0 0,0 bottom,from(#DFDFDF),to(#9ea2a3));
+	background: -webkit-linear-gradient(#DFDFDF,#9ea2a3);
+	background: -moz-linear-gradient(#DFDFDF,#9ea2a3);
+	background: -ms-linear-gradient(#DFDFDF,#9ea2a3);
+	background: -o-linear-gradient(#DFDFDF,#9ea2a3);
+	background: linear-gradient(#DFDFDF,#9ea2a3);
+}
+/* Конец: Select Шинный калькулятор и Carbase */
+
+/*Таблица с брендами в page_main*/
+.mainpageBrands{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0 -20px;
+}
+
+.mainpageBrands > li {
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.mainpageBrands > li > span{
+	display: block;
+}
+
+.mainpageBrands > li .view-catalog {
+	padding: 4px;
+	width: 130px;
+	height: 130px;
+	margin: 0 0 5px 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	box-shadow: 1px 1px 2px #e6e6e6;
+	cursor: default;
+	background: #fff;
+}
+.view-catalog .mask{
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-color: transparent;
+	transition: background-color 0.4s ease;
+
+}
+.view-catalog img {
+	display: block;
+	position: relative;
+	width: 130px;
+	height: 130px;
+	transition: all 0.2s linear;
+}
+
+.view-catalog a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: transparent !important;
+	text-align: center;
+	position: relative;
+	font: bold 13px/14px arial;
+	margin: 7px 0 0 0;
+	transition: color 0.4s ease;
+}
+
+.view-catalog a.bigMargin{
+	margin-top: 17px;
+}
+
+.view-catalog a.bigMargin2{
+	margin-top: 29px;
+}
+
+.view-catalog a.bigMargin3{
+	margin-top: 51px;
+}
+
+.view-catalog a:hover {
+	text-decoration: underline;
+	color: #fff !important;
+}
+
+.view-catalog:hover img {
+	transform: scale(1.15);
+}
+
+.view-catalog:hover .mask {
+	border-radius: 5px;
+	background-color: rgba(0,0,0, 0.65);
+}
+
+.view-catalog:hover a{
+	transition: color 0.4s ease;
+	color: #fff !important;
+}
+/*Конец: Таблица с брендами в page_main*/
+
+
+/* Форма заявки на сотрудничество (cooperation.requests.offices.tpl) */
+.coop_request_offices {
+	max-width: 350px;
+}
+
+.coop_request_offices textarea {
+	max-width: 100%;
+}
+
+/* Личный кабинет - Гараж - Добавить (carbase.applicability.full.tpl) */
+.garageAddCar {
+	min-width: 200px;
+	max-width: 290px;
+}
+
+.garageAddCar select.fr-form-control {
+	border: 1px solid #cccccc;
+	color: #555;
+	background: #fff;
+	-moz-border-radius: 4px !important;
+	-webkit-border-radius: 4px !important;
+	border-radius: 4px !important;
+}
+
+.garageAddCar select.fr-form-control[disabled] {
+	color: #999;
+	background: #eeeeee;
+}
+
+.garageAddCar #modificationFullNameDiv {
+	padding: 10px 0 5px;
+	min-height: 20px;
+}
+
+/* Личный кабинет - Гараж - Редактировать (carbase.garage.car.edit.tpl) */
+
+.garageEditPage .garageEditForm {
+	max-width: 350px;
+}
+
+.garageEditPage img.garage-small-image-car {
+	max-width: 60%;
+	margin-bottom: 20px;
+}
+
+.garageEditPage img.garage-large-image-car {
+	margin-left: 20px;
+}
