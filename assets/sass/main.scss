@@ -1,2 +1,98 @@
-@import '_sprite.scss';
-@import '_mixin.scss';
+
+.clearfix {
+  *zoom: 1;
+  &:before {
+    display: table;
+
+    content: '';
+  }
+  &:after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
+}
+.clear {
+  clear: both;
+}
+.rebuild-content {
+  h2 {
+    font-size: 200%;
+
+    margin: 0 0 20px;
+  }
+  ul {
+    display: block;
+
+    margin: 0 0 20px;
+    padding: 0;
+
+    list-style: none;
+
+    @extend .clearfix;
+    li {
+      display: inline-block;
+      float: left;
+
+      width: 20%;
+      padding: 5px;
+
+      text-align: center;
+      a {
+        color: #36f;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    td,
+    th {
+      padding: 6px;
+
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #c1c1c1;
+    }
+    td {
+      width: 30%;
+      border-bottom: 1px solid #c1c1c1;
+      border-right: 0;
+      border-left: 0;
+      &:first-child {
+        width: 70%;
+
+        text-align: left;
+      }
+      a{
+        color: red;
+        text-decoration: none;
+        border-bottom: 1px dotted red;
+        &:hover {
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+    tr {
+      &:nth-child(2) {
+        td {
+          text-align: center;
+          font-weight: bold;
+          background-color: #D7CACA;
+        }
+      }
+      &:last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+      &:hover {
+        td {
+          background-color: #D7CACA;
+        }
+      }
+    }
+  }
+}

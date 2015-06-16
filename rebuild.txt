@@ -1,0 +1,107 @@
+<style>.clearfix,.rebuild-content ul{*zoom:1}.clearfix:before,.rebuild-content ul:before{display:table;content:''}.clearfix:after,.rebuild-content ul:after{display:table;clear:both;content:''}.clear{clear:both}.rebuild-content h2{font-size:200%;margin:0 0 20px}.rebuild-content ul{display:block;margin:0 0 20px;padding:0;list-style:none}.rebuild-content ul li{display:inline-block;float:left;width:20%;padding:5px;text-align:center}.rebuild-content ul li a{color:#36f}.rebuild-content table{width:100%}.rebuild-content table td,.rebuild-content table th{padding:6px;text-align:center;vertical-align:middle}.rebuild-content table th{background-color:#c1c1c1}.rebuild-content table td{width:30%;border-bottom:1px solid #c1c1c1;border-right:0;border-left:0}.rebuild-content table td:first-child{width:70%;text-align:left}.rebuild-content table td a{color:red;text-decoration:none;border-bottom:1px dotted red}.rebuild-content table td a:hover{border-bottom:1px solid red}.rebuild-content table tr:nth-child(2) td{text-align:center;font-weight:700;background-color:#D7CACA}.rebuild-content table tr:last-child td{border-bottom:0}.rebuild-content table tr:hover td{background-color:#D7CACA}</style>
+<div class="rebuild-content">
+  <h2>Стёкла Volvo</h2>
+  <ul class="list-all">
+	<li><a href="#">240 (08.1974 - 08.1993 )</a></li>
+	<li><a href="#">760 (08.1981 - 07.1992 )</a></li>
+	<li><a href="#">C30 (10.2006 - )</a></li>
+	<li><a href="#">FL 6 (09.1985 - 03.2000 )</a></li>
+	<li><a href="#">S80 (05.1998 - 07.2006 )</a></li>
+	<li><a href="#">440 K (08.1988 - 12.1996 )</a></li>
+	<li><a href="#">850 (06.1991 - 10.1997 )</a></li>
+	<li><a href="#">C70 кабрио (03.2006 - )</a></li>
+	<li><a href="#">S40 I (07.1995 - 12.2003 )</a></li>
+	<li><a href="#">S80 II (03.2006 - )</a></li>
+	<li><a href="#">480 E (04.1986 - 07.1996 )</a></li>
+	<li><a href="#">940 II (08.1994 - 10.1998 )</a></li>
+	<li><a href="#">FH 12 (08.1993 - )</a></li>
+	<li><a href="#">S60 (07.2000 - )</a></li>
+	<li><a href="#">XC 90 (10.2002 - )</a></li>
+	<li><a href="#">740 (04.1983 - 08.1992 )</a></li>
+  </ul>
+  <h2>Стекла Volvo 240</h2>
+  <table>
+	<tr>
+	  <th colspan="2">Лобовые стекла</th>
+	</tr>
+	<tr>
+	  <td>Описание</td>
+	  <td>Номер</td>
+	</tr>
+	<tr>
+	  <td>Прозрачное</td>
+	  <td><a href="#">8810ACL</a></td>
+	</tr>
+	<tr>
+	  <td>Зеленое</td>
+	  <td><a href="#">8810AGN</a></td>
+	</tr>
+	<tr>
+	  <td>Зеленое + Голубая полоса    </td>
+	  <td><a href="#">8810AGNBL</a></td>
+	</tr>
+	</table>
+	<table>
+	<tr>
+	  <th colspan="2">Боковые стекла - левая сторона</th>
+	</tr>
+	<tr>
+	  <td>Описание</td>
+	  <td>Номер</td>
+	</tr>
+	<tr>
+	  <td>Зеленое + Седан 4 двери + Передняя дверь</td>
+	  <td><a href="#">8810LGNS4FD</a></td>
+	</tr>
+	</table>
+	<table>
+	<tr>
+	  <th colspan="2">Боковые стекла - правая сторона</th>
+	</tr>
+	<tr>
+	  <td>Описание</td>
+	  <td>Номер</td>
+	</tr>
+	<tr>
+	  <td>Зеленое + Седан 4 двери + Передняя дверь</td>
+	  <td><a href="#">8810RGNS4FD</a></td>
+	</tr>
+	</table>
+	<table>
+	<tr>
+	  <th colspan="2">Задние стекла</th>
+	</tr>
+	<tr>
+	  <td>Описание</td>
+	  <td>Номер</td>
+	</tr>
+	<tr>
+	  <td>Зеленое + Универсал + С местом под стоп-сигнал</td>
+	  <td><a href="#">8810BGNEB</a></td>
+	</tr>
+	<tr>
+	  <td>Зеленое + Универсал + Инкапсуляция (установлен молдинг)</td>
+	  <td><a href="#">8810BGNEZ</a></td>
+	</tr>
+	<tr>
+	  <td>Зеленое + Седан</td>
+	  <td><a href="#">8810BGNS</a></td>
+	</tr>
+  </table>
+
+  <h2>заголовок</h2>
+  <table>
+	<tr>
+	  <th colspan="2">Название детали</th>
+	</tr>
+	<tr>
+	  <td>Описание</td>
+	  <td>Номер</td>
+	</tr>
+	<tr>
+	  <td>деталь</td>
+	  <td><a href="#">название и ссылку слева вместо # не забудьте ставить </a></td>
+	</tr>
+  </table>
+
+</div><!-- /.rebuild-content -->
