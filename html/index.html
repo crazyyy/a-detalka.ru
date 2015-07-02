@@ -1,843 +1,207 @@
-<!DOCTYPE html>
-<html lang="ru" data-livestyle-extension="available" hola_ext_inject="disabled">
-
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Портал a-detalka - автозапчасти</title>
+    <title> </title>
 
+    <link href="http://www.google-analytics.com/" rel="dns-prefetch"><!-- dns prefetch -->
+    <!-- meta -->
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/jquery-ui-i18n.min.js"></script>
-  <script src="js/jquery.jgrowl_minimized.js" charset="UTF-8"></script>
-  <script src="js/jquery.cookie.js"></script>
-  <script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.mousewheel-3.0.2.pack.js"></script>
-  <script src="js/jquery.maskedinput-1.3.js"></script>
-  <script src="js/jquery.multiselect.js"></script>
-  <script src="js/email.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/cssFramework.js"></script>
-  <script src="js/jquery.placeholder.min.js"></script>
-  <script>
-    $(function() {
-      $('input[placeholder], textarea[placeholder]').placeholder();
-    });
-  </script>
-  <script src="js/jquery.cycle.lite.1.7.js"></script>
-  <!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-  <script>
-    var SiteLocale = '';
-  </script>
-  <script>
-    var langDateRange = {
-      today: 'Сегодня',
-      lastSevenDay: 'За последние 7 дней',
-      thisMonth: 'За этот месяц',
-      thisYear: 'За этот год',
-      thisLastYear: 'За последние 12 месяцев',
-      previousMonth: 'Предыдущий месяц',
-      specificDate: 'Один день',
-      allDatesBefore: 'Все даты до',
-      allDatesAfter: 'Все даты после',
-      dateRange: 'Выбрать дни',
-      rangeStartTitle: 'С:',
-      rangeEndTitle: 'По:',
-      nextLinkText: 'След.',
-      prevLinkText: 'Пред.'
-    };
-  </script>
-  <script src="js/daterangepicker.jQuery.js"></script>
-  <script src="js/date.js"></script>
-  <script>
-    $(document).ready(function() {
-      jQuery.datepicker.setDefaults(jQuery.datepicker.regional['ru']);
-    });
-  </script>
-  <script>
-    var popupMessageCloseAllNotifications = '[ Закрыть все уведомления ]';
-    var popupMessageAddItemToBasket = 'Товар добавлен в корзину';
-    var alertMessageAddItemToBasket = 'Такой товар уже есть в корзине в количестве xx штук. Добавить?';
-    var addToCartAuthError = '<strong>Для добавления товаров в корзину необходимо авторизироваться<\/strong>';
-    var addToCartDataError = '<strong>Ошибка при добавлении в корзину. <br />Попробуйте перезагрузить страницу с результатами поиска<\/strong>';
-    var addToCartLimitError = '<strong>Для дальнейшего добавления новых позиций в корзину необходимо авторизироваться.<\/strong>';
-    var addToCartCookieLimitError = '<strong>Для добавления этого товара в корзину необходимо авторизироваться.<\/strong>';
-    var addToCartAlreadyInCartError = '<strong>Обработка данного товара имеет ограничения. Обновить кол-во позиций вы можете в корзине.<\/strong>';
-    var addToCartError = '<strong>Ошибка при добавлении в корзину<\/strong>';
-    var answerOptionPositive = 'Да';
-    var answerOptionNegative = 'Нет';
-    var chooseVendorDefaultOption = 'Выберите марку';
-    var carbaseApplBlockCarManufacturer = 'Марка';
-    var chooseModelDefaultOption = 'Выберите модель';
-    var carbaseApplBlockCarModel = 'Модель';
-    var chooseYearDefaultOption = 'Выберите год';
-    var carbaseApplBlockCarYear = 'Год выпуска';
-    var chooseModificationDefaultOption = 'Выберите модификацию';
-    var carbaseApplBlockCarModification = 'Модификация';
-    var packingAddToTrashMessage = 'Можно заказать только партиями по {PACKING_VALUES} и т.д. штук.';
-    var packingTrashOrderMessage = 'Деталь {BRAND_NUMBER} можно заказать только партиями по {PACKING_VALUES} и т.д. штук.';
-    var confirmCartClear = 'Вы действительно хотите очистить корзину?';
-    var warningCaption = 'Внимание!';
-    var clientId = null;
-    var resellerId = 592371;
-    var isVirtualSite = 1;
-  </script>
-  <script src="js/js_misc.js"></script>
-  <script src="js/jquery.browser.min.js"></script>
-  <script>
-    var initSearchFormOnExtendedAutocomplete = true;
-  </script>
-  <script src="js/script.js"></script>
+    <!-- icons -->
+    <link href="favicon.ico" rel="shortcut icon">
 
-  <link rel="stylesheet" href="css/old.css">
-  <link rel="stylesheet" href="http://astatic.abcp.ru/css/carbase.css">
-  <link rel="stylesheet" href="http://astatic.abcp.ru/css/cssFramework.css">
-  <link rel="stylesheet" href="css/old2.css">
-<!--   <link rel="stylesheet" href="css/main.css"> -->
-
-
+    <!-- css + javascript -->
+    <link rel="stylesheet" href="style.css" media="all">
+    <script type="text/javascript" src="///cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+  <header role="banner">
+    <div class="inner">
 
-<body class="defaultTemplateTheme">
+      <div class="logo">
+        <img src="img/logo.png" alt="" title="">
+      </div><!-- /logo -->
+
+      <nav class="nav" role="navigation">
+        <ul class="headnav">
+          <li>menu</li>
+          <li>menu</li>
+        </ul>
+      </nav><!-- /nav -->
+
+    </div><!-- /.inner -->
+  </header><!-- /header -->
+
+  <section role="main">
+    <div class="inner">
+
+      <article>
+        <h1 class="ctitle">Пример контента (рыба)</h1>
+        <p>The purpose of this HTML is to help determine what default settings are with Bitters and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
+
+        <hr>
+
+        <h1>h1. Heading</h1>
+        <h2>h2. Heading</h2>
+        <h3>h3. Heading</h3>
+        <h4>h4. Heading</h4>
+        <h5>h5. Heading</h5>
+        <h6>h6. Heading</h6>
+
+        <hr>
+
+        <h1 class="ctitle">Paragraph</h1>
+
+        <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+        <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+        <hr>
+
+        <h1 class="ctitle">List Types</h1>
+
+        <h3>Definition List - dl > dt + dd</h3>
+        <dl>
+          <dt>Definition List Title</dt>
+          <dd>This is a definition list division.</dd>
+        </dl>
+
+        <h3>Ordered List - ol</h3>
+        <ol>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ol>
+
+        <h3>Unordered List - ul</h3>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+
+        <hr>
+
+        <h1 class="ctitle">Fieldsets and Form Elements</h1>
+
+        <fieldset>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+
+          <form>
+            <h2>Form Element</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+
+            <p><label for="text_field">Text Field:</label>
+              <input type="text" id="text_field"></p>
+
+            <p><label for="text_area">Text Area:</label>
+              <textarea id="text_area"></textarea></p>
+
+            <p><label for="select_element">Select Element:</label>
+              <select name="select_element">
+                <optgroup label="Option Group 1">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </optgroup>
+                <optgroup label="Option Group 2">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </optgroup>
+            </select></p>
+
+            <p><label for="radio_buttons">Radio Buttons:</label>
+              <label>
+                <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
+              </label>
+              <label>
+                <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
+              </label>
+              <label>
+                <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
+              </label>
+            </p>
+
+            <p><label for="checkboxes">Checkboxes:</label>
+              <label>
+                <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
+              </label>
+              <label>
+                <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Checkbox 2
+              </label>
+              <label>
+                <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Checkbox 3
+              </label>
+            </p>
+
+            <p><label for="password">Password:</label>
+              <input type="password" class="password" name="password">
+            </p>
+
+            <p><label for="file">File Input:</label>
+              <input type="file" class="file" name="file">
+            </p>
 
 
-  <div style="text-align: center;"><span style="color: #000000; font-size: 12pt;"><strong>Уважаемые посетители магазина, приносим извинения, сайт находится в процессе разработки,<br> если не нашли необходимую Вам информацию, позвоните, поможем, расскажем. С уважением, A-DetalKa.<br></strong></span>
-  </div>
-  <div class="darkscreen" id="darkscreen"></div>
-  <div class="wrapper">
-    <div class="head">
+            <p><input type="submit" value="Submit"></p>
+          </form>
+        </fieldset>
 
-      <div class="leftHeadClientBlock">
-        <table class="leftHeadClientBlockTable">
+        <hr>
+
+        <h1 class="ctitle">Tables</h1>
+
+        <table cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
-              <td class="logo">
-
-              </td>
-              <td class="phone">
-
-                <div style="padding-top: 12px; text-align: center;"><span style="font-size: 32px;">
-                  </span>
-                </div>
-              </td>
-              <td class="franch">
-                <div class="franchControls">
-
-
-                </div>
-              </td>
+              <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+            </tr>
+            <tr>
+              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+            </tr>
+            <tr class="even">
+              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+            </tr>
+            <tr>
+              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="rightHeadBlock">
-        <div class="formAuthor">
-          <div class="wVisualFormLogin">
-            <div id="userinfo" class="loginForm">
-              <form name="login" action="" method="post" id="lgnform">
-                <input type="hidden" name="action" value="login">
-                <input type="hidden" name="login_start" value="1">
-                <div class="log">
-                  <input type="text" name="login" id="login" value="" placeholder="Логин">
-                </div>
-                <div class="pass">
-                  <input name="pass" id="pass" type="password" value="" placeholder="Пароль">
-                </div>
-                <div class="in">
-                  <input type="submit" name="go" id="go" value="Вход" class="submitButton">
-                </div>
-                <div class="personalInfo">
-                  <a href="http://a-detalka.ru/remindpass">Забыли пароль?</a>
-                  <a href="http://a-detalka.ru/reg" class="reg">Регистрация</a>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="basketLegend">
-            <div class="cartGuest">
-              <a href="http://a-detalka.ru/cart">Корзина</a>: <span class="qty">0</span><span class="small10px"> шт.</span> на <span class="moneySumm">0</span>  <span class="small10px">руб.</span>
-            </div>
-          </div>
+      </article>
 
-        </div>
-      </div>
-      <div class="headerShadow"></div>
-    </div>
-    <div class="baseContent">
-      <div class="mainAsideMenu">
-        <div class="wMenu">
-          <div class="nav">
-            <ul id="my-menu" class="menu">
-              <li class="">
-                <a href="http://a-detalka.ru/main">Главная</a>
-              </li>
-              <li class="">
-                <a href="http://a-detalka.ru/company">О компании</a>
-              </li>
-              <li class="">
-                <a href="http://a-detalka.ru/personal_cabinet" class="collapsed collapsible">Личный кабинет</a>
-                <ul class="submenu" style="display: none;">
-                  <li>
-                    <a href="http://a-detalka.ru/personal_cabinet">Лично</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/cart">Корзина</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/search_history/?by_time">История поиска</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="">
-                <a href="http://a-detalka.ru/vinquery">VIN-запрос</a>
-              </li>
-              <li class="">
-                <a href="http://a-detalka.ru/OpisanieCatalogov" class="collapsed collapsible">Каталоги</a>
-                <ul class="submenu" style="display: none;">
-                  <li>
-                    <a href="http://a-detalka.ru/Catalog1">Выбор автомобиля</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/catalo_autodealer">Автокаталог On-Line</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/opisanie_CatCar" target="_blank">Каталог CatCar</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/catalog_tecdoc" target="_blank">Каталог TecDoc</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/carbase">Запчасти для ТО</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/Catalog_Glass">Автостекла</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/oil_main">Масла</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/akb_main">Аккумуляторы</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/tyres_catalog">Шины</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/disks_catalog">Диски</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/brend">Производители</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="">
-                <a href="http://a-detalka.ru/Catalog_autoclips" class="collapsed collapsible">Каталог Автокрепежа</a>
-                <ul class="submenu" style="display: none;">
-                  <li>
-                    <a href="http://a-detalka.ru/clips">Автокрепеж (КЛИПСЫ)</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/clips_model">По модели авто</a>
-                  </li>
-                  <li>
-                    <a href="http://a-detalka.ru/mycatalog/?catalogId=2371">Автокрепеж AD Plastik</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="">
-                <a href="http://a-detalka.ru/contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <aside class="sidebar" role="complementary">
+        <div class="widget">
+          <h6>Пример виджета</h6>
+          <ul>
+            <li class="cat-item-none">Рубрик нет</li>
+          </ul>
+        </div><!-- widget -->
+      </aside><!-- /sidebar -->
 
-        <script type="text/javascript" src="http://ra.revolvermaps.com/0/0/6.js?i=08p4q7b55gu&m=0&s=170&c=ff0000&cr1=ffffff&f=arial&l=0" async="async"></script>
-      </div>
-      <div class="mainColumn">
-        <div class="mainArticle">
-          <div class="wSearchForm">
-            <form method="get" name="searchform" id="srchform" action="http://a-detalka.ru/search">
-              <div class="searchFormContainer">
-                <div class="code">
-                  <input type="text" id="pcode" name="pcode" value="" placeholder="Введите код запчасти" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-                </div>
-                <div class="find">
-                  <input type="submit" alt="Найти" name="go" value="Найти">
-                </div>
-              </div>
-              <div class="histExpect">
-              </div>
-            </form>
-          </div>
+    </div><!-- /.inner -->
+  </section><!-- /section -->
+</div><!-- /wrapper -->
 
+<footer role="contentinfo">
+  <div class="inner">
 
-          <div class="parent-block">
-            <style>.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:''}.clearfix:after{clear:both}.clear{clear:both}#wrap-lamps{position:relative}#wrap-lamps .main-img img{max-width:100%}#wrap-lamps .groups{position:absolute;left:0;top:0}.group-lamp{position:absolute}.group-lamp a{display:block;float:left;height:70px;color:#333;margin:0 7px;text-decoration:underline}.group-lamp a:hover{color:red}.group-brake-lights{width:382px;top:1206px;left:11px}.group-brake-lights-center{width:382px;left:11px;top:718px}.group-interiror-lights{width:382px;left:464px;top:718px}.group-back-number{width:382px;left:11px;top:1077px}.group-trunk-lights{width:382px;left:11px;top:957px}.group-glovebox-lights{top:17px;width:382px;left:11px}.group-dashboard-lights{top:17px;width:382px;left:470px}.group-fog-lights{top:605px;width:480px;left:465px}.group-side-blinkers{left:620px;top:121px;width:382px}.group-blinkers{left:11px;top:605px;width:382px}.group-front-parking-lights{left:11px;top:474px;width:382px}.group-reversing-lamp{left:11px;top:831px;width:382px}.group-high-beam{left:11px;top:170px;width:382px}.group-rear-fog-lights{width:382px;left:501px;top:1252px}.group-back-parking-lights{width:382px;left:595px;top:1149px}.group-lamp .fig{width:36px;height:50px;display:block;text-align:center;margin:0 auto}.group-lamp .txt{text-align:center;font-size:12px;display:block;margin-top:1px}.group-lamp .name-group{background-color:#900;display:inline-block;color:#fff;border-bottom-left-radius:37px;font-size:15px;padding:1px 19px}</style>
+    <p class="copyright">
+      © 2015 Собственность. Работает на html2wp easy.
+    </p><!-- /copyright -->
 
-            <h1 style="margin-left: 10px;">Автомобильные лампы</h1>
-            <div id="wrap-lamps">
-              <div class="main-img">
-                <img src="img/yeti.jpg" alt="Автомобильные лампы" title="Автомобильные лампы">
-              </div>
-              <div class="groups">
-                <div class="group-lamp group-brake-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/7528/osram/id484331" target="_blank">
-                      <span class="fig">
-                            <img src="img/P215W.jpg" alt="Лампа P21/5W" title="Лампа P21/5W">
-                        </span>
-                      <span class="txt">P21/5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/7225/osram/id484322" target="_blank">
-                      <span class="fig">
-                            <img src="img/P214W.jpg" alt="Лампа P21/4W" title="Лампа P21/4W">
-                        </span>
-                      <span class="txt">P21/4W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/7506/osram/id484494" target="_blank">
-                      <span class="fig">
-                            <img src="img/P21W.jpg" alt="Лампа P21W" title="Лампа P21W">
-                        </span>
-                      <span class="txt">P21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/7505/osram/id484493" target="_blank">
-                      <span class="fig">
-                            <img src="img/W21W.jpg" alt="Лампа W21W" title="Лампа W21W">
-                        </span>
-                      <span class="txt">W21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/7515/osram/id484497" target="_blank">
-                      <span class="fig">
-                            <img src="img/W215W.jpg" alt="Лампа W21/5W" title="Лампа W21/5W">
-                        </span>
-                      <span class="txt">W21/5W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Стоп-сигналы</div>
-                </div>
-                <div class="group-lamp group-brake-lights-center">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/1987302217/bosch/id293466" target="_blank">
-                      <span class="fig">
-                            <img src="img/W3W.jpg" alt="Лампа W3W" title="Лампа W3W">
-                        </span>
-                      <span class="txt">W3W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302205/bosch/id209524" target="_blank">
-                      <span class="fig">
-                            <img src="img/W16W.jpg" alt="Лампа W16W" title="Лампа W16W">
-                        </span>
-                      <span class="txt">W16W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Стоп-сигнал (центральный)</div>
-                </div>
-                <div class="group-lamp group-interiror-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/6413/osram/id484413" target="_blank">
-                      <span class="fig">
-                            <img src="img/C5W.jpg" alt="Лампа C5W" title="Лампа C5W">
-                        </span>
-                      <span class="txt">C5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/48242673/philips/id45774514" target="_blank">
-                      <span class="fig">
-                            <img src="img/FEST10W.jpg" alt="Лампа FEST10W" title="Лампа FEST10W">
-                        </span>
-                      <span class="txt">FEST10W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12023/philips/id21192095" target="_blank">
-                      <span class="fig">
-                            <img src="img/H5W.jpg" alt="Лампа H5W" title="Лампа H5W">
-                        </span>
-                      <span class="txt">H5W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Внутреннее освещение</div>
-                </div>
-                <div class="group-lamp group-back-number">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/5008/osram/id484238" target="_blank">
-                      <span class="fig">
-                            <img src="img/R10W.jpg" alt="Лампа R10W" title="Лампа R10W">
-                        </span>
-                      <span class="txt">R10W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/6413/osram/id484413" target="_blank">
-                      <span class="fig">
-                            <img src="img/C5W.jpg" alt="Лампа C5W" title="Лампа C5W">
-                        </span>
-                      <span class="txt">C5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/5007/osram/id484562" target="_blank">
-                      <span class="fig">
-                            <img src="img/R5W.jpg" alt="Лампа R5W" title="Лампа R5W">
-                        </span>
-                      <span class="txt">R5W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Подсветка заднего номера</div>
-                </div>
-                <div class="group-lamp group-trunk-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/5007/osram/id484562" target="_blank">
-                      <span class="fig">
-                            <img src="img/R5W.jpg" alt="Лампа R5W" title="Лампа R5W">
-                        </span>
-                      <span class="txt">R5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/6413/osram/id484413" target="_blank">
-                      <span class="fig">
-                            <img src="img/C5W.jpg" alt="Лампа C5W" title="Лампа C5W">
-                        </span>
-                      <span class="txt">C5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/48242673/philips/id45774514" target="_blank">
-                      <span class="fig">
-                            <img src="img/FEST10W.jpg" alt="Лампа FEST10W" title="Лампа FEST10W">
-                        </span>
-                      <span class="txt">FEST10W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Подсветка багажника</div>
-                </div>
-                <div class="group-lamp group-glovebox-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/1987302217/bosch/id293466" target="_blank">
-                      <span class="fig">
-                            <img src="img/W3W.jpg" alt="Лампа W3W" title="Лампа W3W">
-                        </span>
-                      <span class="txt">W3W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/6413/osram/id484413" target="_blank">
-                      <span class="fig">
-                            <img src="img/C5W.jpg" alt="Лампа C5W" title="Лампа C5W">
-                        </span>
-                      <span class="txt">C5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/5007/osram/id484562" target="_blank">
-                      <span class="fig">
-                            <img src="img/R5W.jpg" alt="Лампа R5W" title="Лампа R5W">
-                        </span>
-                      <span class="txt">R5W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Освещение «бардачка»</div>
-                </div>
-                <div class="group-lamp group-dashboard-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/1987302217/bosch/id293466" target="_blank">
-                      <span class="fig">
-                            <img src="img/W3W.jpg" alt="Лампа W3W" title="Лампа W3W">
-                        </span>
-                      <span class="txt">W3W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12516CP/philips/id553611" target="_blank">
-                      <span class="fig">
-                            <img src="img/T5.jpg" alt="Лампа T5" title="Лампа T5">
-                        </span>
-                      <span class="txt">T5</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/17036/narva/id937856" target="_blank">
-                      <span class="fig">
-                            <img src="img/BAX.jpg" alt="Лампа BAX" title="Лампа BAX">
-                        </span>
-                      <span class="txt">BAX</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Лампы приборной панели</div>
-                </div>
-                <div class="group-lamp group-fog-lights">
-                  <div class="clearfix" style="padding-left: 20px;">
-                    <a href="http://www.autopiter.ru/goods/1987302011/bosch/id281806" target="_blank">
-                      <span class="fig">
-                            <img src="img/H1.jpg" alt="Лампа H1" title="Лампа H1">
-                        </span>
-                      <span class="txt">H1</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64175/osram/id484765" target="_blank">
-                      <span class="fig">
-                            <img src="img/H2.jpg" alt="Лампа H2" title="Лампа H2">
-                        </span>
-                      <span class="txt">H2</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64151/osram/id484276" target="_blank">
-                      <span class="fig">
-                            <img src="img/H3.jpg" alt="Лампа H3" title="Лампа H3">
-                        </span>
-                      <span class="txt">H3</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302071/bosch/id215020" target="_blank">
-                      <span class="fig">
-                            <img src="img/H7.jpg" alt="Лампа H7" title="Лампа H7">
-                        </span>
-                      <span class="txt">H7</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64212/osram/id484470" target="_blank">
-                      <span class="fig">
-                            <img src="img/H8.jpg" alt="Лампа H8" title="Лампа H8">
-                        </span>
-                      <span class="txt">H8</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64211/osram/id484308" target="_blank">
-                      <span class="fig">
-                            <img src="img/H11.jpg" alt="Лампа H11" title="Лампа H11">
-                        </span>
-                      <span class="txt">H11</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/hb39005prc1/philips/id30248075" target="_blank">
-                      <span class="fig">
-                            <img src="img/HB3.jpg" alt="Лампа HB3" title="Лампа HB3">
-                        </span>
-                      <span class="txt">HB3</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/9006/osram/id484335" target="_blank">
-                      <span class="fig">
-                            <img src="img/HB4.jpg" alt="Лампа HB4" title="Лампа HB4">
-                        </span>
-                      <span class="txt">HB4</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Противотуманные фары</div>
-                </div>
-                <div class="group-lamp group-side-blinkers">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/1987302217/bosch/id293466" target="_blank">
-                      <span class="fig">
-                            <img src="img/W3W.jpg" alt="Лампа W3W" title="Лампа W3W">
-                        </span>
-                      <span class="txt">W3W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12396NAB2/philips/id552874" target="_blank">
-                      <span class="fig">
-                            <img src="img/WY5W.jpg" alt="Лампа WY5W" title="Лампа WY5W">
-                        </span>
-                      <span class="txt">WY5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/68191/narva/id938039" target="_blank">
-                      <span class="fig">
-                            <img src="img/H21W.jpg" alt="Лампа H21W" title="Лампа H21W">
-                        </span>
-                      <span class="txt">H21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Боковые указатели поворота</div>
-                </div>
-                <div class="group-lamp group-blinkers">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/7506/osram/id484494" target="_blank">
-                      <span class="fig">
-                            <img src="img/P21W.jpg" alt="Лампа P21W" title="Лампа P21W">
-                        </span>
-                      <span class="txt">P21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/7507/osram/id484652" target="_blank">
-                      <span class="fig">
-                            <img src="img/PY21W.jpg" alt="Лампа PY21W" title="Лампа PY21W">
-                        </span>
-                      <span class="txt">PY21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64136/osram/id484576" target="_blank">
-                      <span class="fig">
-                            <img src="img/H21W.jpg" alt="Лампа H21W" title="Лампа H21W">
-                        </span>
-                      <span class="txt">H21W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Указатели поворота - «аварийка»</div>
-                </div>
-                <div class="group-lamp group-front-parking-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/12961BVB2/philips/id553425" target="_blank">
-                      <span class="fig">
-                            <img src="img/W5W.jpg" alt="Лампа W5W" title="Лампа W5W">
-                        </span>
-                      <span class="txt">W5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302207/bosch/id282003" target="_blank">
-                      <span class="fig">
-                            <img src="img/T4W.jpg" alt="Лампа T4W" title="Лампа T4W">
-                        </span>
-                      <span class="txt">T4W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/5007/osram/id484562" target="_blank">
-                      <span class="fig">
-                            <img src="img/R5W.jpg" alt="Лампа R5W" title="Лампа R5W">
-                        </span>
-                      <span class="txt">R5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/12023/philips/id21192095" target="_blank">
-                      <span class="fig">
-                            <img src="img/H5W.jpg" alt="Лампа H5W" title="Лампа H5W">
-                        </span>
-                      <span class="txt">H5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/l14806/lynx/id36433037" target="_blank">
-                      <span class="fig">
-                            <img src="img/H6W.jpg" alt="Лампа H6W" title="Лампа H6W">
-                        </span>
-                      <span class="txt">H6W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Передние габаритные огни</div>
-                </div>
-                <div class="group-lamp group-high-beam">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/1987302421/bosch/id293479" target="_blank">
-                      <span class="fig">
-                            <img src="img/R2.jpg" alt="Лампа R2" title="Лампа R2">
-                        </span>
-                      <span class="txt">R2</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64203/osram/id484620" target="_blank">
-                      <span class="fig">
-                            <img src="img/H4.jpg" alt="Лампа H4(P45T)" title="Лампа H4(P45T)">
-                        </span>
-                      <span class="txt">H4(P45T)</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302011/bosch/id281806" target="_blank">
-                      <span class="fig">
-                            <img src="img/H1.jpg" alt="Лампа H1" title="Лампа H1">
-                        </span>
-                      <span class="txt">H1</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302041/bosch/id293458" target="_blank">
-                      <span class="fig">
-                            <img src="img/H4(2).jpg" alt="Лампа H4" title="Лампа H4">
-                        </span>
-                      <span class="txt">H4</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302071/bosch/id215020" target="_blank">
-                      <span class="fig">
-                            <img src="img/H7.jpg" alt="Лампа H7" title="Лампа H7">
-                        </span>
-                      <span class="txt">H7</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302082/bosch/id215021" target="_blank">
-                      <span class="fig">
-                            <img src="img/H9.jpg" alt="Лампа H9" title="Лампа H9">
-                        </span>
-                      <span class="txt">H9</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/hb39005prc1/philips/id30248075" target="_blank">
-                      <span class="fig">
-                            <img src="img/HB3.jpg" alt="Лампа HB3" title="Лампа HB3">
-                        </span>
-                      <span class="txt">HB3</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/9006/osram/id484335" target="_blank">
-                      <span class="fig">
-                            <img src="img/HB4.jpg" alt="Лампа HB4" title="Лампа HB4">
-                        </span>
-                      <span class="txt">HB4</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/d1s/philips/id44370937" target="_blank" style="margin: 0 16px;">
-                      <span class="fig">
-                            <img src="img/D1S.jpg" alt="Лампа D1S" title="Лампа D1S">
-                        </span>
-                      <span class="txt">D1S</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/D2S/philips/id28161005" target="_blank">
-                      <span class="fig">
-                            <img src="img/D2S.jpg" alt="Лампа D2S" title="Лампа D2S">
-                        </span>
-                      <span class="txt">D2S</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/d3s/Philips/id47589408" target="_blank">
-                      <span class="fig">
-                            <img src="img/D3S.jpg" alt="Лампа D3S" title="Лампа D3S">
-                        </span>
-                      <span class="txt">D3S</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/42306vic1/philips/id54058458" target="_blank">
-                      <span class="fig">
-                            <img src="img/D3R.jpg" alt="Лампа D3R" title="Лампа D3R">
-                        </span>
-                      <span class="txt">D3R</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/D4S/philips/id28161006" target="_blank">
-                      <span class="fig">
-                            <img src="img/D4S.jpg" alt="Лампа D4S" title="Лампа D4S">
-                        </span>
-                      <span class="txt">D4S</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/42406/philips/id31742736" target="_blank">
-                      <span class="fig">
-                            <img src="img/D4R.jpg" alt="Лампа D4R" title="Лампа D4R">
-                        </span>
-                      <span class="txt">D4R</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Дальний, ближний свет</div>
-                </div>
-                <div class="group-lamp group-reversing-lamp">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/7506/osram/id484494" target="_blank">
-                      <span class="fig">
-                            <img src="img/P21W.jpg" alt="Лампа P21W" title="Лампа P21W">
-                        </span>
-                      <span class="txt">P21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/68191/narva/id938039" target="_blank">
-                      <span class="fig">
-                            <img src="img/H21W.jpg" alt="Лампа H21W" title="Лампа H21W">
-                        </span>
-                      <span class="txt">H21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/921/osram/id484512" target="_blank">
-                      <span class="fig">
-                            <img src="img/W16W.jpg" alt="Лампа W16W" title="Лампа W16W">
-                        </span>
-                      <span class="txt">W16W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/7505/osram/id484493" target="_blank">
-                      <span class="fig">
-                            <img src="img/W21W.jpg" alt="Лампа W21W" title="Лампа W21W">
-                        </span>
-                      <span class="txt">W21W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Фонарь заднего хода</div>
-                </div>
-                <div class="group-lamp group-rear-fog-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/1987302201/bosch/id293462" target="_blank">
-                      <span class="fig">
-                            <img src="img/P21W.jpg" alt="Лампа P21W" title="Лампа P21W">
-                        </span>
-                      <span class="txt">P21W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/64138/osram/id484415" target="_blank">
-                      <span class="fig">
-                            <img src="img/H21W.jpg" alt="Лампа H21W" title="Лампа H21W">
-                        </span>
-                      <span class="txt">H21W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Задние противотуманные огни</div>
-                </div>
-                <div class="group-lamp group-back-parking-lights">
-                  <div class="clearfix">
-                    <a href="http://www.autopiter.ru/goods/68161/narva/id938134" target="_blank">
-                      <span class="fig">
-                            <img src="img/H6W.jpg" alt="Лампа H6W" title="Лампа H6W">
-                        </span>
-                      <span class="txt">H6W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/5007/osram/id484562" target="_blank">
-                      <span class="fig">
-                            <img src="img/R5W.jpg" alt="Лампа R5W" title="Лампа R5W">
-                        </span>
-                      <span class="txt">R5W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/5008/osram/id484238" target="_blank">
-                      <span class="fig">
-                            <img src="img/R10W.jpg" alt="Лампа R10W" title="Лампа R10W">
-                        </span>
-                      <span class="txt">R10W</span>
-                    </a>
-                    <a href="http://www.autopiter.ru/goods/1987302207/bosch/id282003" target="_blank">
-                      <span class="fig">
-                            <img src="img/T4W.jpg" alt="Лампа T4W" title="Лампа T4W">
-                        </span>
-                      <span class="txt">T4W</span>
-                    </a>
-                  </div>
-                  <div class="name-group">Задние габаритные огни</div>
-                </div>
-              </div>
-            </div>
-          </div><!-- parent-block -->
+  </div><!-- /.inner -->
+</footer><!-- /footer -->
 
-        </div>
-      </div>
-    </div>
-    <div class="foot">
-      <div class="footer">
-        <div class="footerInnerBlock">
-          <table class="footerClientBlockTable">
-            <tbody>
-              <tr>
-                <td class="copyright">
-                  <p>© 2014, Все права защищены.
-                    <br>Интернет-магазин запчастей.</p>
-                </td>
-                <td class="footerAddress">+7 (4872) 52-52-85&nbsp;
-                  <br>
-                  <br>
-                  <a href="http://a-detalka.ru/glass_volvo/?version=preview#">
-                    <br>
-                  </a>
-                </td>
-                <td class="footerAddress2">Мы работаем каждый день
-                  <br>
-                  <br>В будни: с 10-00 до 19-00
-                  <br>Выходные: с 10-00 до 15-00</td>
-                <td class="payment">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
-                </td>
-                <td class="socNetworks">
-
-                  <br> <a href="http://a-detalka.ru/feedback">Отправьте нам сообщение!<br><br></a>
-
-                </td>
-                <td class="banners">
-
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui-autocomplete extendedAutocomplete">
-    <table>
-      <tbody class="ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 2; top: 0px; left: 0px; display: none;"></tbody>
-    </table>
-  </div>
-  <spots-wrapper></spots-wrapper>
 </body>
-
 </html>
-

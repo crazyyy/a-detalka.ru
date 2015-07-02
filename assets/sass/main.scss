@@ -1,158 +1,135 @@
-.clearfix {
-  *zoom: 1;
-  &:before {
-    display: table;
+@import 'import/reset';
+@import 'import/variables';
+@import 'import/buttons';
+@import 'import/forms';
+@import 'import/lists';
+@import 'import/tables';
+@import 'import/mixin.scss';
+@import 'import/wordpress.scss';
+@import 'sprite';
+@import 'font_fontawesome';
+@import 'font_opensans';
+@import 'font_roboto';
 
-    content: '';
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: normal;
+  line-height: $base-line-height;
+
+  color: $base-font-color;
+  background-color: $base-background-color;
+
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+
+  margin: 0 0 $small-spacing;
+}
+p,
+pre {
+  margin: 0 0 $small-spacing;
+}
+a {
+  transition: $base-transition;
+  text-decoration: none;
+
+  color: $action-color;
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
   }
-  &:after {
-    display: table;
-    clear: both;
-
-    content: '';
+  &:active,
+  &:focus {
+    color: lighten($action-color, 15%);
+    outline: none;
   }
 }
-.clear {
-  clear: both;
+hr {
+  margin: $base-spacing 0;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: $base-border;
+  border-left: none;
 }
-#wrap-lamps {
-  .main-img img {
-    max-width: 100%;
-  }
+img,
+picture {
+  max-width: 100%;
+  margin: 0;
+}
+.wrapper {
   position: relative;
-  .groups {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+
+  @extend .clearfix;
+}
+.inner {
+  position: relative;
+
+  width: $width;
+  margin: 0 auto;
+
+  @extend .clearfix;
 }
 
-.group-lamp {
-  position: absolute;
-  a {
+header {
+  background-color: $light-gray;
+  .logo {
     display: block;
-    float: left;
-    height: 70px;
-    color: #333;
-    text-decoration: none;
-    margin: 0 7px;
-    text-decoration: underline;
-    &:hover {
-      color: red;
+
+    width: $width / 10;
+    img {
+      max-width: 100%;
     }
   }
 }
-
-.group-brake-lights {
-  width: 382px;
-  top: 1206px;
-  left: 11px;
-}
-
-.group-brake-lights-center {
-  width: 382px;
-  left: 11px;
-  top: 718px;
-}
-
-.group-interiror-lights {
-  width: 382px;
-  left: 464px;
-  top: 718px;
-}
-
-.group-back-number {
-  width: 382px;
-  left: 11px;
-  top: 1077px;
-}
-
-.group-trunk-lights {
-  width: 382px;
-  left: 11px;
-  top: 957px;
-}
-
-.group-glovebox-lights {
-  top: 17px;
-  width: 382px;
-  left: 11px;
-}
-
-.group-dashboard-lights {
-  top: 17px;
-  width: 382px;
-  left: 470px;
-}
-
-.group-fog-lights {
-  top: 605px;
-  width: 480px;
-  left: 465px;
-}
-
-.group-side-blinkers {
-  left: 620px;
-  top: 121px;
-  width: 382px;
-}
-
-.group-blinkers {
-  left: 11px;
-  top: 605px;
-  width: 382px;
-}
-
-.group-front-parking-lights {
-  left: 11px;
-  top: 474px;
-  width: 382px;
-}
-
-.group-reversing-lamp {
-  left: 11px;
-  top: 831px;
-  width: 382px;
-}
-
-.group-high-beam {
-  left: 11px;
-  top: 170px;
-  width: 382px;
-}
-
-.group-rear-fog-lights {
-  width: 382px;
-  left: 501px;
-  top: 1252px;
-}
-
-.group-back-parking-lights {
-  width: 382px;
-  left: 595px;
-  top: 1149px;
-}
-
-.group-lamp {
-  .fig {
-    width: 36px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+nav {
+  ul {
+    @extend .justify-child;
+    @extend .clearfix;
+    li {
+      display: inline-block;
+    }
   }
-  .txt {
-    text-align: center;
-    font-size: 12px;
-    display: block;
-    margin-top: 1px;
-  }
-  .name-group {
-    background-color: #900;
-    display: inline-block;
-    color: #fff;
-    border-bottom-left-radius: 37px;
-    font-size: 15px;
-    padding: 1px 19px;
+  .headnav {
+    width: $width / 5;
   }
 }
+
+section {
+  padding: 0 0 $footer;
+}
+article {
+  @extend .clearfix;
+}
+.looper {
+  @extend .clearfix;
+}
+
+
+footer {
+  height: $footer;
+  margin: $footer_margin auto 0;
+
+  background-color: $light-gray;
+  .inner {
+    height: $footer;
+  }
+}
+
+@import 'import/print';

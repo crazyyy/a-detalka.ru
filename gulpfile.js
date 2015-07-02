@@ -22,19 +22,18 @@ var AUTOPREFIXER_BROWSERS = [
 if (htmlOWp === true) {
   var basePaths = {
     src: 'assets/',
-    cache: 'application/templates_c/*.php',
     dest: './html/'
   };
 } else {
   var basePaths = {
     src: 'assets/',
-    cache: 'application/templates_c/*.php',
     dest: './wordpress/wp-content/themes/' + wpThemeName + '/'
   };
 }
 var paths = {
   images: {
     src: basePaths.src + 'img/',
+    srcimg: basePaths.src + 'img/**/*.{png,jpg,jpeg,gif}',
     dest: basePaths.dest + 'img/'
   },
   scripts: {
@@ -81,16 +80,14 @@ gulp.task('imagecp', function () {
 });
 
 // Optimize images
-gulp.task('image', function () {
-  return gulp.src(paths.images.src + '**/*.{png, jpg, jpeg, .gif}')
-
-    .pipe(plugins.cache(
-      plugins.imagemin({
-        progressive: true,
+gulp.task('images', function () {
+  return gulp.src(paths.images.srcimg)
+    .pipe(plugins.cache(plugins.imagemin({
+      progressive: true,
+      interlaced: true,
         svgoPlugins: [{removeViewBox: false}],
         use: [pngquant()]
-      })
-    ))
+    })))
     .pipe(gulp.dest(paths.images.dest))
     .pipe(plugins.size({title: 'images'}));
 });
@@ -144,7 +141,7 @@ gulp.task('styles', function () {
     .pipe(plugins.size({title: 'styles'}));
 });
 
-gulp.task('serve', ['sprite', 'image', 'scripts', 'styles', 'fonts'], function () {
+gulp.task('serve', ['sprite', 'images', 'scripts', 'styles', 'fonts'], function () {
   if (htmlOWp === true) {
     browserSync({
       notify: false,
@@ -170,8 +167,8 @@ gulp.task('serve', ['sprite', 'image', 'scripts', 'styles', 'fonts'], function (
     paths.fonts.src
   ]).on('change', reload);
 
-  gulp.watch(paths.sprite.src, ['sprite', 'image', 'styles', reload]);
-  gulp.watch(paths.images.src, ['image', reload]);
+  gulp.watch(paths.sprite.src, ['sprite', 'images', 'styles', reload]);
+  gulp.watch(paths.images.srcimg, ['images', reload]);
   gulp.watch(appFiles.styles, ['styles', reload]);
   gulp.watch(paths.sprite.src, ['styles', reload]);
   gulp.watch(paths.fonts.src, ['fonts', reload]);
