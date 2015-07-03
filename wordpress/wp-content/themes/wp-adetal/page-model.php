@@ -1,18 +1,37 @@
 <?php /* Template Name: Model Page */ get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <article class="c-article">
+    <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+    <h1 class="c-title"><?php the_title(); ?>  <?php the_post_thumbnail('medium'); ?></h1>
 
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
+    <table class="list-model">
+      <tr>
+        <th>Модификация</th>
+        <th>Тип двигателя</th>
+        <th>Привод</th>
+        <th>Объем</th>
+        <th>engines</th>
+        <th>Лошадок</th>
+        <th>Производство с</th>
+      </tr>
+      <?php $children = get_pages(
+      array(
+          'sort_column' => 'menu_order',
+          'sort_order' => 'ASC',
+          'parent' => $post->ID
+      ));
+      foreach( $children as $post ) {
+        setup_postdata( $post ); ?>
+      <tr>
+        <td><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
+        <td><?php the_field('engine-type'); ?></td>
+        <td><?php the_field('drive'); ?></td>
+        <td><?php the_field('volume'); ?></td>
+        <td><?php the_field('engines'); ?></td>
+        <td><?php the_field('horsepower'); ?></td>
+        <td><?php the_field('year'); ?></td>
+      </tr>
+      <?php } ?>
+    </table><!-- /.list-model -->
 
-    </article>
-  <?php endwhile; else: // If 404 page error ?>
-    <article>
-
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+  </article>
 <?php get_footer(); ?>
