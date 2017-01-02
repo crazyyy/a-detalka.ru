@@ -3,7 +3,7 @@
     <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
     <h1 class="c-title"><?php the_title(); ?>  <?php the_post_thumbnail('medium'); ?></h1>
 
-    <table class="list-model">
+    <table class="table-model">
       <tr>
         <th>Модификация</th>
         <th>Тип двигателя</th>
@@ -31,7 +31,7 @@
         <td><?php the_field('year'); ?></td>
       </tr>
       <?php } ?>
-    </table><!-- /.list-model -->
+    </table><!-- /.table-model -->
 
   </article>
 <?php get_footer(); ?>

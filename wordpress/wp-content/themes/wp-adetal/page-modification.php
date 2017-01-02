@@ -11,7 +11,7 @@
       } ?></h1>
     <h2 class="d-title"><?php the_title(); ?>   <span><?php the_field('year'); ?></span></h2>
 
-    <table class="list-modifications">
+    <table class="table-modifications">
       <tr>
         <th>Описание детали</th>
         <th>Количество</th>
@@ -30,7 +30,7 @@
         <td><a rel="nofollow" target="_blank" href="http://www.a-detalka.ru/search?pcode=<?php the_sub_field('price'); ?>">Найти</a></td>
       </tr>
       <?php } } ?>
-    </table><!-- /.list-modifications -->
+    </table><!-- /.table-modifications -->
 
   </article>
 <?php get_footer(); ?>
